@@ -1,0 +1,18 @@
+frontegg:
+  clientId: {your client id}
+  apiKey: {your api key}
+  config:
+    urls:
+      baseUrl: https://api.frontegg.com
+      authenticationService: /vendors/auth/token
+      auditsService: /audits/
+      notificationService: /notification/
+      tenantsService: /tenants/
+      metadataService: /metadata/
+      teamService: /team
+      eventService: /event
+      identityService: /identity
+  settings:
+    disableCors: false
+    maxRetries: 3
+    cookieDomainRewrite:

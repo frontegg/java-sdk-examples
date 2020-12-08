@@ -1,0 +1,22 @@
+.DS_Store
+
+# build
+target/
+dependency_tree.txt
+release.properties
+pom.xml.releaseBackup
+pom.xml.tag
+
+
+# IDEs
+*.iml
+.idea/
+.settings/
+.project
+.classpath
+.vscode/
+.history/
+
+# other
+keystore*
+*.junk
