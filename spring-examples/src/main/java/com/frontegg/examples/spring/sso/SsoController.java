@@ -1,4 +1,4 @@
-package com.frontegg.examples.spring;
+package com.frontegg.examples.spring.sso;
 
 import com.frontegg.sdk.api.client.ApiClient;
 import com.frontegg.sdk.config.FronteggConfig;
@@ -16,22 +16,14 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @RestController
-public class SSO
+public class SsoController
 {
-	private final FronteggConfig config;
-	private final ApiClient apiClient;
-	private final FronteggAuthenticator authenticator;
-
 	private final SsoClient ssoClient;
 
 	@Autowired
-	public SSO(ApiClient apiClient, FronteggAuthenticator authenticator, FronteggConfig config)
+	public SsoController(ApiClient apiClient, FronteggAuthenticator authenticator, FronteggConfig config)
 	{
-		this.apiClient = apiClient;
-		this.authenticator = authenticator;
-		this.config = config;
-
-		this.ssoClient = new SsoClient(this.authenticator, this.apiClient, this.config);
+		this.ssoClient = new SsoClient(authenticator, apiClient, config);
 	}
 
 	@RequestMapping(value = "/login",

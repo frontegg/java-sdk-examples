@@ -1,12 +1,10 @@
-package com.frontegg.examples.spring;
+package com.frontegg.examples.spring.sso;
 
 public class SamlRequest
 {
 	private String payload;
 
-	public SamlRequest()
-	{
-	}
+	public SamlRequest() {}
 
 	public String getPayload()
 	{

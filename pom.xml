@@ -9,9 +9,15 @@
     <version>1.0-SNAPSHOT</version>
 
 	<packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.4.RELEASE</version>
+    </parent>
 	
 	<properties>
-		<version.frontegg>0.0.2-SNAPSHOT</version.frontegg>
+		<version.frontegg>0.0.3-SNAPSHOT</version.frontegg>
 	</properties>
 
     <modules>
