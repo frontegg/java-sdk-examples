@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+	<parent>
+        <groupId>org.frontegg.examples</groupId>
+        <artifactId>java-sdk-examples</artifactId>
+        <version>1.0-SNAPSHOT</version>
+	</parent>
+	
+	<groupId>org.frontegg.examples.spring</groupId>
+    <artifactId>spring-examples</artifactId>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <version.spring-boot>1.4.4.RELEASE</version.spring-boot>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${version.spring-boot}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <version>${version.spring-boot}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.frontegg.sdk</groupId>
+            <artifactId>sso</artifactId>
+            <version>${version.frontegg}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.frontegg.sdk.spring</groupId>
+            <artifactId>spring-autoconfigure</artifactId>
+            <version>${version.frontegg}</version>
+        </dependency>
+        <!--Add this if you wish to use frontegg's identity provider context resolver-->
+        <!--Needed when using frontegg's frontend components-->
+        <!--Don't forget to remove MyContextResolver first-->
+        <!--<dependency>-->
+        <!--    <groupId>com.frontegg.sdk.spring</groupId>-->
+        <!--    <artifactId>spring-frontegg-identity-context-resolver</artifactId>-->
+        <!--    <version>${version.frontegg}</version>-->
+        <!--</dependency>-->
+    </dependencies>
+</project>

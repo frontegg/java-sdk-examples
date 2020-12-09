@@ -1,4 +1,4 @@
-package com.frontegg.samples;
+package com.frontegg.examples.spring;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;

@@ -8,9 +8,13 @@
     <artifactId>java-sdk-examples</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <packaging>pom</packaging>
+	<packaging>pom</packaging>
+	
+	<properties>
+		<version.frontegg>0.0.2-SNAPSHOT</version.frontegg>
+	</properties>
 
     <modules>
-        <module>spring</module>
+        <module>spring-examples</module>
     </modules>
 </project>

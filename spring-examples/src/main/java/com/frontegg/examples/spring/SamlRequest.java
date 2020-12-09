@@ -1,4 +1,4 @@
-package com.frontegg.samples;
+package com.frontegg.examples.spring;
 
 public class SamlRequest
 {

@@ -1,6 +1,6 @@
 frontegg:
-  clientId: {your client id}
-  apiKey: {your api key}
+  clientId: "<YOUR CLIENT ID>"
+  apiKey: "<YOUR API KEY>"
   config:
     urls:
       baseUrl: https://api.frontegg.com

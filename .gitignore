@@ -7,7 +7,6 @@ release.properties
 pom.xml.releaseBackup
 pom.xml.tag
 
-
 # IDEs
 *.iml
 .idea/
@@ -19,4 +18,4 @@ pom.xml.tag
 
 # other
 keystore*
-*.junk
+*.ignore

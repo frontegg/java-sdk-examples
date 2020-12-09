@@ -1,4 +1,4 @@
-package com.frontegg.samples;
+package com.frontegg.examples.spring;
 
 import com.frontegg.sdk.api.client.ApiClient;
 import com.frontegg.sdk.config.FronteggConfig;
