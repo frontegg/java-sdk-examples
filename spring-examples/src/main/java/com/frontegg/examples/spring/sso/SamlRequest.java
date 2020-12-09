@@ -1,4 +1,4 @@
-package com.frontegg.examples.spring;
+package com.frontegg.examples.spring.sso;
 
 public class SamlRequest
 {

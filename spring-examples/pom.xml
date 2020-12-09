@@ -27,15 +27,21 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${version.spring-boot}</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-            <version>${version.spring-boot}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-security</artifactId>-->
+            <!--<version>${version.spring-boot}</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>com.frontegg.sdk</groupId>
             <artifactId>sso</artifactId>
+            <version>${version.frontegg}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.frontegg.sdk</groupId>
+            <artifactId>events</artifactId>
             <version>${version.frontegg}</version>
         </dependency>
         <dependency>
@@ -46,10 +52,10 @@
         <!--Add this if you wish to use frontegg's identity provider context resolver-->
         <!--Needed when using frontegg's frontend components-->
         <!--Don't forget to remove MyContextResolver first-->
-        <!--<dependency>-->
-        <!--    <groupId>com.frontegg.sdk.spring</groupId>-->
-        <!--    <artifactId>spring-frontegg-identity-context-resolver</artifactId>-->
-        <!--    <version>${version.frontegg}</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.frontegg.sdk.spring</groupId>
+            <artifactId>spring-frontegg-identity-context-resolver</artifactId>
+            <version>${version.frontegg}</version>
+        </dependency>
     </dependencies>
 </project>
