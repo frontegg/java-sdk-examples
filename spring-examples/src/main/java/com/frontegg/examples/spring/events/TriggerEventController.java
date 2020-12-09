@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(value = "/events")
 public class TriggerEventController {
-
     @Autowired
     private EventsClient eventsClient;
 
@@ -27,11 +26,11 @@ public class TriggerEventController {
                                                        @RequestParam String description) {
 
         EventProperties eventProperties = new DefaultEventProperties(title, description);
-        TriggerOptions<EventProperties> options = new TriggerOptions();
+        TriggerOptions<EventProperties> options = new TriggerOptions<>();
         MyCustomWebHookBody webHookBody = new MyCustomWebHookBody();
         webHookBody.setField("asdas");
 
-        ChannelsConfiguration channelsConfiguration = ChannelsConfigurationBuilder.getInstance()
+        ChannelsConfiguration channelsConfiguration = ChannelsConfigurationBuilder.builder()
                 .webhook(webHookBody)
                 .build();
 
@@ -39,8 +38,8 @@ public class TriggerEventController {
         options.setEventKey(eventKey);
         options.setTenantId(tenantId);
         options.setProperties(eventProperties);
-        EventResponse response = eventsClient.trigger(options);
-        return new ResponseEntity(response, HttpStatus.CREATED);
+        EventResponse response = this.eventsClient.trigger(options);
+        return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
     @RequestMapping(value = "/{eventId}",
@@ -48,6 +47,6 @@ public class TriggerEventController {
             consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<EventStatuses> getEventStatus(@PathVariable String eventId) {
         EventStatuses statuses = eventsClient.getEventStatus(eventId);
-        return new ResponseEntity(statuses, HttpStatus.OK);
+        return new ResponseEntity<>(statuses, HttpStatus.OK);
     }
 }

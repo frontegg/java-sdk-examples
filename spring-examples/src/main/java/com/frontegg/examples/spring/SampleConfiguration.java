@@ -9,12 +9,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class SampleConfiguration {
-
-    @Bean
-    public EventsClient eventsClient(FronteggAuthenticator fronteggAuthenticator,
-                                     ApiClient apiClient,
-                                     FronteggConfig config) {
-        return new EventClientImpl(fronteggAuthenticator, apiClient, config);
-    }
+public class SampleConfiguration
+{
+	@Bean
+	public EventsClient eventsClient(
+			FronteggAuthenticator fronteggAuthenticator, ApiClient apiClient, FronteggConfig config
+	)
+	{
+		return new EventClientImpl(fronteggAuthenticator, apiClient, config);
+	}
 }

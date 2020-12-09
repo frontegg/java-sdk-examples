@@ -48,11 +48,10 @@
         <!--Add this if you wish to use frontegg's identity provider context resolver-->
         <!--Needed when using frontegg's frontend components-->
         <!--Don't forget to remove MyContextResolver first-->
-        <dependency>
-            <groupId>com.frontegg.sdk.spring</groupId>
-            <artifactId>spring-frontegg-identity-context-resolver</artifactId>
-            <version>${version.frontegg}</version>
-        </dependency>
-
+		<!--<dependency>-->
+		<!--    <groupId>com.frontegg.sdk.spring</groupId>-->
+		<!--    <artifactId>spring-frontegg-identity-context-resolver</artifactId>-->
+		<!--    <version>${version.frontegg}</version>-->
+		<!--</dependency>-->
     </dependencies>
 </project>

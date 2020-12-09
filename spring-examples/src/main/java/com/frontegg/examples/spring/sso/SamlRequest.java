@@ -4,9 +4,7 @@ public class SamlRequest
 {
 	private String payload;
 
-	public SamlRequest()
-	{
-	}
+	public SamlRequest() {}
 
 	public String getPayload()
 	{
