@@ -27,11 +27,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${version.spring-boot}</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-security</artifactId>-->
-            <!--<version>${version.spring-boot}</version>-->
-        <!--</dependency>-->
 
         <dependency>
             <groupId>com.frontegg.sdk</groupId>
@@ -44,6 +39,7 @@
             <artifactId>events</artifactId>
             <version>${version.frontegg}</version>
         </dependency>
+
         <dependency>
             <groupId>com.frontegg.sdk.spring</groupId>
             <artifactId>spring-autoconfigure</artifactId>
@@ -57,5 +53,6 @@
             <artifactId>spring-frontegg-identity-context-resolver</artifactId>
             <version>${version.frontegg}</version>
         </dependency>
+
     </dependencies>
 </project>
