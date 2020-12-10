@@ -1,6 +1,7 @@
 package com.frontegg.examples.spring;
 
 import com.frontegg.sdk.api.client.ApiClient;
+import com.frontegg.sdk.audit.AuditsClient;
 import com.frontegg.sdk.config.FronteggConfig;
 import com.frontegg.sdk.events.EventsClient;
 import com.frontegg.sdk.middleware.authenticator.FronteggAuthenticator;
@@ -16,5 +17,13 @@ public class SampleConfiguration
 	)
 	{
 		return new EventsClient(fronteggAuthenticator, apiClient, config);
+	}
+
+	@Bean
+	public AuditsClient auditClient(
+			FronteggAuthenticator fronteggAuthenticator, ApiClient apiClient, FronteggConfig config
+	)
+	{
+		return new AuditsClient(fronteggAuthenticator, apiClient, config);
 	}
 }
