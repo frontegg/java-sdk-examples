@@ -65,7 +65,7 @@ public class TriggerAuditController {
         auditsFilter.setFilter(filter);
         auditsFilter.setSortBy(sortBy);
         auditsFilter.setSortDirection(sortDirection);
-        AuditResponse<AuditModel> response = auditClient.getAudits(auditsFilter);
+        AuditResponse<AuditModel> response = auditClient.getAudits(auditsFilter, AuditModel.class);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }

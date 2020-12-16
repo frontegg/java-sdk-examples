@@ -2,8 +2,6 @@ package com.frontegg.examples.spring.audit;
 
 import com.frontegg.sdk.audit.model.Auditable;
 
-import java.time.LocalDateTime;
-
 public class AuditModel implements Auditable {
     private String tenantId;
     private String action;
@@ -11,7 +9,7 @@ public class AuditModel implements Auditable {
     private String resource;
     private String severity;
     private String ip;
-    private LocalDateTime createdAt;
+    private String createdAt;
 
     private String field1;
     private String field2;
@@ -65,11 +63,11 @@ public class AuditModel implements Auditable {
         this.ip = ip;
     }
 
-    public LocalDateTime getCreatedAt() {
+    public String getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(LocalDateTime createdAt) {
+    public void setCreatedAt(String createdAt) {
         this.createdAt = createdAt;
     }
 
