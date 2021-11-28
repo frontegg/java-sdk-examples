@@ -17,7 +17,7 @@
     </parent>
 	
 	<properties>
-		<version.frontegg>0.0.4</version.frontegg>
+		<version.frontegg>0.0.7</version.frontegg>
 	</properties>
 
     <modules>
